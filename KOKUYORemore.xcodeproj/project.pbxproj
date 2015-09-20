@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F3E4EE41BAF7BCB0045137F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E4EE31BAF7BCB0045137F /* AppDelegate.swift */; };
+		3F3E4EE61BAF7BCB0045137F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E4EE51BAF7BCB0045137F /* ViewController.swift */; };
+		3F3E4EE91BAF7BCB0045137F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3E4EE71BAF7BCB0045137F /* Main.storyboard */; };
+		3F3E4EEB1BAF7BCB0045137F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3E4EEA1BAF7BCB0045137F /* Assets.xcassets */; };
+		3F3E4EEE1BAF7BCB0045137F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3E4EEC1BAF7BCB0045137F /* LaunchScreen.storyboard */; };
+		3F3E4EF91BAF7BCB0045137F /* KOKUYORemoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E4EF81BAF7BCB0045137F /* KOKUYORemoreTests.swift */; };
+		3F3E4F041BAF7BCB0045137F /* KOKUYORemoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3E4F031BAF7BCB0045137F /* KOKUYORemoreUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F3E4EF51BAF7BCB0045137F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F3E4ED81BAF7BCB0045137F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F3E4EDF1BAF7BCB0045137F;
+			remoteInfo = KOKUYORemore;
+		};
+		3F3E4F001BAF7BCB0045137F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F3E4ED81BAF7BCB0045137F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F3E4EDF1BAF7BCB0045137F;
+			remoteInfo = KOKUYORemore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F3E4EE01BAF7BCB0045137F /* KOKUYORemore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOKUYORemore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3E4EE31BAF7BCB0045137F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F3E4EE51BAF7BCB0045137F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F3E4EE81BAF7BCB0045137F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F3E4EEA1BAF7BCB0045137F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F3E4EED1BAF7BCB0045137F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F3E4EEF1BAF7BCB0045137F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3E4EF41BAF7BCB0045137F /* KOKUYORemoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KOKUYORemoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3E4EF81BAF7BCB0045137F /* KOKUYORemoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOKUYORemoreTests.swift; sourceTree = "<group>"; };
+		3F3E4EFA1BAF7BCB0045137F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3E4EFF1BAF7BCB0045137F /* KOKUYORemoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KOKUYORemoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3E4F031BAF7BCB0045137F /* KOKUYORemoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOKUYORemoreUITests.swift; sourceTree = "<group>"; };
+		3F3E4F051BAF7BCB0045137F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F3E4EDD1BAF7BCB0045137F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3E4EF11BAF7BCB0045137F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3E4EFC1BAF7BCB0045137F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F3E4ED71BAF7BCB0045137F = {
+			isa = PBXGroup;
+			children = (
+				3F3E4EE21BAF7BCB0045137F /* KOKUYORemore */,
+				3F3E4EF71BAF7BCB0045137F /* KOKUYORemoreTests */,
+				3F3E4F021BAF7BCB0045137F /* KOKUYORemoreUITests */,
+				3F3E4EE11BAF7BCB0045137F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F3E4EE11BAF7BCB0045137F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E4EE01BAF7BCB0045137F /* KOKUYORemore.app */,
+				3F3E4EF41BAF7BCB0045137F /* KOKUYORemoreTests.xctest */,
+				3F3E4EFF1BAF7BCB0045137F /* KOKUYORemoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F3E4EE21BAF7BCB0045137F /* KOKUYORemore */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E4EE31BAF7BCB0045137F /* AppDelegate.swift */,
+				3F3E4EE51BAF7BCB0045137F /* ViewController.swift */,
+				3F3E4EE71BAF7BCB0045137F /* Main.storyboard */,
+				3F3E4EEA1BAF7BCB0045137F /* Assets.xcassets */,
+				3F3E4EEC1BAF7BCB0045137F /* LaunchScreen.storyboard */,
+				3F3E4EEF1BAF7BCB0045137F /* Info.plist */,
+			);
+			path = KOKUYORemore;
+			sourceTree = "<group>";
+		};
+		3F3E4EF71BAF7BCB0045137F /* KOKUYORemoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E4EF81BAF7BCB0045137F /* KOKUYORemoreTests.swift */,
+				3F3E4EFA1BAF7BCB0045137F /* Info.plist */,
+			);
+			path = KOKUYORemoreTests;
+			sourceTree = "<group>";
+		};
+		3F3E4F021BAF7BCB0045137F /* KOKUYORemoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F3E4F031BAF7BCB0045137F /* KOKUYORemoreUITests.swift */,
+				3F3E4F051BAF7BCB0045137F /* Info.plist */,
+			);
+			path = KOKUYORemoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F3E4EDF1BAF7BCB0045137F /* KOKUYORemore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3E4F081BAF7BCB0045137F /* Build configuration list for PBXNativeTarget "KOKUYORemore" */;
+			buildPhases = (
+				3F3E4EDC1BAF7BCB0045137F /* Sources */,
+				3F3E4EDD1BAF7BCB0045137F /* Frameworks */,
+				3F3E4EDE1BAF7BCB0045137F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KOKUYORemore;
+			productName = KOKUYORemore;
+			productReference = 3F3E4EE01BAF7BCB0045137F /* KOKUYORemore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F3E4EF31BAF7BCB0045137F /* KOKUYORemoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3E4F0B1BAF7BCB0045137F /* Build configuration list for PBXNativeTarget "KOKUYORemoreTests" */;
+			buildPhases = (
+				3F3E4EF01BAF7BCB0045137F /* Sources */,
+				3F3E4EF11BAF7BCB0045137F /* Frameworks */,
+				3F3E4EF21BAF7BCB0045137F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F3E4EF61BAF7BCB0045137F /* PBXTargetDependency */,
+			);
+			name = KOKUYORemoreTests;
+			productName = KOKUYORemoreTests;
+			productReference = 3F3E4EF41BAF7BCB0045137F /* KOKUYORemoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F3E4EFE1BAF7BCB0045137F /* KOKUYORemoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3E4F0E1BAF7BCB0045137F /* Build configuration list for PBXNativeTarget "KOKUYORemoreUITests" */;
+			buildPhases = (
+				3F3E4EFB1BAF7BCB0045137F /* Sources */,
+				3F3E4EFC1BAF7BCB0045137F /* Frameworks */,
+				3F3E4EFD1BAF7BCB0045137F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F3E4F011BAF7BCB0045137F /* PBXTargetDependency */,
+			);
+			name = KOKUYORemoreUITests;
+			productName = KOKUYORemoreUITests;
+			productReference = 3F3E4EFF1BAF7BCB0045137F /* KOKUYORemoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F3E4ED81BAF7BCB0045137F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = welldesign;
+				TargetAttributes = {
+					3F3E4EDF1BAF7BCB0045137F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					3F3E4EF31BAF7BCB0045137F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3F3E4EDF1BAF7BCB0045137F;
+					};
+					3F3E4EFE1BAF7BCB0045137F = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3F3E4EDF1BAF7BCB0045137F;
+					};
+				};
+			};
+			buildConfigurationList = 3F3E4EDB1BAF7BCB0045137F /* Build configuration list for PBXProject "KOKUYORemore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F3E4ED71BAF7BCB0045137F;
+			productRefGroup = 3F3E4EE11BAF7BCB0045137F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F3E4EDF1BAF7BCB0045137F /* KOKUYORemore */,
+				3F3E4EF31BAF7BCB0045137F /* KOKUYORemoreTests */,
+				3F3E4EFE1BAF7BCB0045137F /* KOKUYORemoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F3E4EDE1BAF7BCB0045137F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3E4EEE1BAF7BCB0045137F /* LaunchScreen.storyboard in Resources */,
+				3F3E4EEB1BAF7BCB0045137F /* Assets.xcassets in Resources */,
+				3F3E4EE91BAF7BCB0045137F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3E4EF21BAF7BCB0045137F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3E4EFD1BAF7BCB0045137F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F3E4EDC1BAF7BCB0045137F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3E4EE61BAF7BCB0045137F /* ViewController.swift in Sources */,
+				3F3E4EE41BAF7BCB0045137F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3E4EF01BAF7BCB0045137F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3E4EF91BAF7BCB0045137F /* KOKUYORemoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3E4EFB1BAF7BCB0045137F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3E4F041BAF7BCB0045137F /* KOKUYORemoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F3E4EF61BAF7BCB0045137F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F3E4EDF1BAF7BCB0045137F /* KOKUYORemore */;
+			targetProxy = 3F3E4EF51BAF7BCB0045137F /* PBXContainerItemProxy */;
+		};
+		3F3E4F011BAF7BCB0045137F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F3E4EDF1BAF7BCB0045137F /* KOKUYORemore */;
+			targetProxy = 3F3E4F001BAF7BCB0045137F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F3E4EE71BAF7BCB0045137F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F3E4EE81BAF7BCB0045137F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F3E4EEC1BAF7BCB0045137F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F3E4EED1BAF7BCB0045137F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F3E4F061BAF7BCB0045137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3F3E4F071BAF7BCB0045137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F3E4F091BAF7BCB0045137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KOKUYORemore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.welldesign.KOKUYORemore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F3E4F0A1BAF7BCB0045137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KOKUYORemore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.welldesign.KOKUYORemore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F3E4F0C1BAF7BCB0045137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KOKUYORemoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.welldesign.KOKUYORemoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOKUYORemore.app/KOKUYORemore";
+			};
+			name = Debug;
+		};
+		3F3E4F0D1BAF7BCB0045137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KOKUYORemoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.welldesign.KOKUYORemoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOKUYORemore.app/KOKUYORemore";
+			};
+			name = Release;
+		};
+		3F3E4F0F1BAF7BCB0045137F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KOKUYORemoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.welldesign.KOKUYORemoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KOKUYORemore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3F3E4F101BAF7BCB0045137F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KOKUYORemoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.welldesign.KOKUYORemoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KOKUYORemore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F3E4EDB1BAF7BCB0045137F /* Build configuration list for PBXProject "KOKUYORemore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3E4F061BAF7BCB0045137F /* Debug */,
+				3F3E4F071BAF7BCB0045137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F3E4F081BAF7BCB0045137F /* Build configuration list for PBXNativeTarget "KOKUYORemore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3E4F091BAF7BCB0045137F /* Debug */,
+				3F3E4F0A1BAF7BCB0045137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F3E4F0B1BAF7BCB0045137F /* Build configuration list for PBXNativeTarget "KOKUYORemoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3E4F0C1BAF7BCB0045137F /* Debug */,
+				3F3E4F0D1BAF7BCB0045137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F3E4F0E1BAF7BCB0045137F /* Build configuration list for PBXNativeTarget "KOKUYORemoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3E4F0F1BAF7BCB0045137F /* Debug */,
+				3F3E4F101BAF7BCB0045137F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F3E4ED81BAF7BCB0045137F /* Project object */;
+}
