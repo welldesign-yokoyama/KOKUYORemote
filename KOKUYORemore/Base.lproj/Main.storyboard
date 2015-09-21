@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
@@ -596,6 +597,14 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="_OUT1_INPUT1" destination="au3-jP-vQu" id="n9Y-I3-6Zj"/>
+                        <outlet property="_OUT1_INPUT2" destination="jdn-d9-KFX" id="nIQ-Cz-yUb"/>
+                        <outlet property="_OUT1_INPUT3" destination="IKf-8l-F3Z" id="EGd-ht-Tg5"/>
+                        <outlet property="_OUT1_INPUT4" destination="Cul-c7-hcb" id="GyS-LJ-o1E"/>
+                        <outlet property="_OUT1_POWERON" destination="Bxj-ro-zs4" id="Pmh-6e-lKx"/>
+                        <outlet property="_OUT1_STANDBY" destination="mfq-wa-oYv" id="woX-tI-QeF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

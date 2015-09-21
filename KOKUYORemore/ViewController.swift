@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var _OUT1_INPUT1: CustomButton!
+    @IBOutlet weak var _OUT1_INPUT2: CustomButton!
+    @IBOutlet weak var _OUT1_INPUT3: CustomButton!
+    @IBOutlet weak var _OUT1_INPUT4: CustomButton!
+    @IBOutlet weak var _OUT1_POWERON: CustomButton!
+    @IBOutlet weak var _OUT1_STANDBY: CustomButton!
     var asyncSocket = AsyncSocket()
 
     override func viewDidLoad() {
