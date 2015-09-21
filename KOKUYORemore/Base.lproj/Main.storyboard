@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxj-ro-zs4" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5010" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxj-ro-zs4" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="182" y="71" width="60" height="60"/>
                                 <state key="normal" title="ON">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,8 +39,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="TCV-FT-et9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tY-Qc-BxR" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5404" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tY-Qc-BxR" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="298" y="405" width="60" height="60"/>
                                 <state key="normal" title="|◀︎◀︎">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,8 +65,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="H7j-ib-kFK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6l-jH-BpE" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5405" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6l-jH-BpE" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="366" y="405" width="60" height="60"/>
                                 <state key="normal" title="◀︎◀︎">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -85,31 +91,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="xDy-ch-59G"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnW-Hh-3Lh" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
-                                <rect key="frame" x="434" y="405" width="60" height="60"/>
-                                <state key="normal" title="｜｜">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
-                                        <color key="value" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
-                                        <color key="value" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au3-jP-vQu" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au3-jP-vQu" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="116" y="170" width="126" height="120"/>
                                 <state key="normal" title="AppleTV">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -131,8 +117,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="GcN-4q-f91"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdn-d9-KFX" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdn-d9-KFX" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="259" y="170" width="126" height="120"/>
                                 <state key="normal" title="MiraCast">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,8 +143,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="fb0-el-kXl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfq-wa-oYv" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5011" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfq-wa-oYv" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="259" y="71" width="60" height="60"/>
                                 <state key="normal" title="OFF">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,8 +169,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="9MY-st-of8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rk-1k-eA4" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5806" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rk-1k-eA4" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="401" y="71" width="60" height="60"/>
                                 <state key="normal" title="▲">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -200,8 +195,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="uOe-qJ-Q7u"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R31-6t-Hz7" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5807" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R31-6t-Hz7" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="467" y="71" width="60" height="60"/>
                                 <state key="normal" title="▼">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -223,8 +221,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="8QM-LI-t3w"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOh-4t-we6" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5808" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOh-4t-we6" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="544" y="71" width="60" height="60"/>
                                 <state key="normal" title="MUTE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -246,8 +247,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="7Di-yG-yeQ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cul-c7-hcb" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cul-c7-hcb" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="401" y="170" width="126" height="120"/>
                                 <state key="normal" title="PC VGA">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -269,8 +273,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="GUg-cO-Mkh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKf-8l-F3Z" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5003" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKf-8l-F3Z" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="544" y="170" width="126" height="120"/>
                                 <state key="normal" title="BD DVD">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -292,8 +299,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="p2f-oI-4tJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4h-tY-nzw" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5406" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4h-tY-nzw" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="502" y="405" width="60" height="60"/>
                                 <state key="normal" title="▶︎▶︎">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -315,8 +325,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="LrD-qx-bJu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-73-Ikh" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5407" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-73-Ikh" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="570" y="405" width="60" height="60"/>
                                 <state key="normal" title="▶︎▶︎|">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -338,8 +351,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="pKB-Uf-GKb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSQ-aN-Mg1" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5400" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSQ-aN-Mg1" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="298" y="317" width="196" height="60"/>
                                 <state key="normal" title="▶︎">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -361,8 +377,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="IWK-by-zyu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-hJ-KXT" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5402" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-hJ-KXT" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="502" y="317" width="128" height="60"/>
                                 <state key="normal" title="■">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -384,8 +403,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="H9m-Bu-2aI"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0u8-Ph-Sr2" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5414" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0u8-Ph-Sr2" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="727" y="170" width="90" height="60"/>
                                 <state key="normal" title="MENU">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -407,8 +429,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="tLo-uM-vmt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-7D-DX3" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5415" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-7D-DX3" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="134" y="317" width="90" height="60"/>
                                 <state key="normal" title="POWER">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -430,8 +455,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="CP4-jU-Mu9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVL-hq-mmE" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5413" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVL-hq-mmE" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="833" y="170" width="90" height="60"/>
                                 <state key="normal" title="TOPMENU">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -453,8 +481,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="VVX-D5-hUh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZD-Tq-iDb" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5403" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZD-Tq-iDb" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="134" y="405" width="90" height="60"/>
                                 <state key="normal" title="EJECT">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -476,8 +507,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="SkN-PE-KaL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgW-rK-0S0" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5412" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgW-rK-0S0" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="795" y="337" width="60" height="60"/>
                                 <state key="normal" title="ENTER">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -499,8 +533,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="3Zx-Qs-arD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXL-aO-U1B" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5408" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXL-aO-U1B" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="795" y="269" width="60" height="60"/>
                                 <state key="normal" title="▲">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -522,8 +559,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="VKK-65-zJR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTv-I5-OtZ" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5410" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTv-I5-OtZ" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="795" y="405" width="60" height="60"/>
                                 <state key="normal" title="▼">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -545,8 +585,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="eK5-nR-m5s"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXe-8K-P0B" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5411" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXe-8K-P0B" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="727" y="337" width="60" height="60"/>
                                 <state key="normal" title="◀︎">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -568,8 +611,11 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="Dwi-WF-7fy"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFY-R9-gQ7" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                            <button opaque="NO" tag="5409" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFY-R9-gQ7" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
                                 <rect key="frame" x="863" y="337" width="60" height="60"/>
                                 <state key="normal" title="▶︎">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -591,6 +637,35 @@
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="foH-pK-Q6w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5401" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnW-Hh-3Lh" customClass="CustomButton" customModule="KOKUYORemore" customModuleProvider="target">
+                                <rect key="frame" x="434" y="405" width="60" height="60"/>
+                                <state key="normal" title="｜｜">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                        <color key="value" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="kvEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="RqU-w2-eGU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
