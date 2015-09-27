@@ -9,31 +9,47 @@
 import UIKit
 
 @IBDesignable
+
+/**
+ CustomButton Class
+ **/
 class CustomButton: UIButton {
+
+    //@IBInspectable var textColor: UIColor?
     @IBInspectable var defaultBackgroundColor :UIColor?
     @IBInspectable var selectedBackgroundColor :UIColor?
     @IBInspectable var highlightedBackgroundColor :UIColor?
     
-    @IBInspectable var textColor: UIColor?
-    
+    /**
+     Corner Radius
+     **/
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
         }
     }
     
+    /**
+     Border Width
+     **/
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
     
+    /**
+     Border Color
+     **/
     @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
         didSet {
             layer.borderColor = borderColor.CGColor
         }
     }
     
+    /**
+     State Highlighted
+     **/
     override var highlighted :Bool {
         didSet {
             if highlighted {
@@ -45,6 +61,9 @@ class CustomButton: UIButton {
         }
     }
     
+    /**
+     State Selected
+     **/
     override var selected :Bool {
         didSet {
             if selected {

@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ ViewController Class
+ **/
 class ViewController: UIViewController {
 
     @IBOutlet weak var _OUT1_INPUT1: CustomButton!
