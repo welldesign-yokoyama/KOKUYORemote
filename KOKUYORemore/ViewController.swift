@@ -18,10 +18,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var _OUT1_STANDBY: CustomButton!
     var asyncSocket = AsyncSocket()
 
+    /**
+     ルートViewがメモリにロードされた直後の呼ばれる
+     **/
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        /**
+         ASyncSocket インスタンス生成
+         **/
+/*
         var error:NSError?
         self.asyncSocket = AsyncSocket(delegate: self)
         do {
@@ -37,31 +44,45 @@ class ViewController: UIViewController {
             print("CONNECTION GOOD")
             NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "onUpdate", userInfo: nil, repeats: true)
         }
+*/
     }
 
+    /**
+     アプリがメモリ警告を受け取った時に呼ばれる
+     **/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    
-    
+    /**
+     NSTimer イベント
+     **/
     func onUpdate() {
         let data1:NSData! = ("RDS DM00100.H 2\u{0D}" as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         self.asyncSocket.writeData(data1, withTimeout:-1, tag: 0)
         print("TimeUP")
         
     }
+    /**
+     HOSTに接続完了
+     **/
     func onSocket(sock: AsyncSocket!, didConnectToHost host: String!, port: UInt16) {
         print("Info___didConnectToHost")
         self.asyncSocket.readDataWithTimeout(-1, tag: 0)
         print(host)
     }
     
+    /**
+     データ送信
+     **/
     func onSocket(sock: AsyncSocket!, didWriteDataWithTag tag: Int) {
         print("WriteData")
     }
 
+    /**
+     データ受信
+     **/
     func onSocket(sock: AsyncSocket!, didReadData data: NSData!, withTag tag: Int) {
         print("Info___didReadData")
         self.asyncSocket.readDataWithTimeout(-1, tag: 0)
@@ -121,17 +142,24 @@ class ViewController: UIViewController {
         }
     }
 
+    /**
+     HOST切断
+     **/
     func onSocket(sock: AsyncSocket!, willDisconnectWithError err: NSError!) {
         print("Info___willDisconnectWithError")
     }
 
+    /**
+     TOUCH DOWN イベントアクション
+     **/
     @IBAction func kvEvent(sender: CustomButton) {
-        
+        /*
         let data1:NSData! = ("ST R\(sender.tag)\u{0D}" as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         self.asyncSocket.writeData(data1, withTimeout:-1, tag: 0)
         
         let data2:NSData! = ("ST R1900\u{0D}" as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         self.asyncSocket.writeData(data2, withTimeout:-1, tag: 0)
+        */
     }
     
 
