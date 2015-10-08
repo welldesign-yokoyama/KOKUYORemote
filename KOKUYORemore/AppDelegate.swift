@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /**
       アプリがバックグラウンドに入った直後に呼ばれる
+　　   HOMEボタンを押した時
      **/
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
@@ -50,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     /**
       アプリがInactiveからActiveになった時に呼ばれる
+　　   ICONボタンを押した時
      **/
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.

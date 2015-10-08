@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         /**
          ASyncSocket インスタンス生成
          **/
-/*
+
         var error:NSError?
         self.asyncSocket = AsyncSocket(delegate: self)
         do {
@@ -47,9 +47,36 @@ class ViewController: UIViewController {
             print("CONNECTION GOOD")
             NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "onUpdate", userInfo: nil, repeats: true)
         }
-*/
+
     }
 
+    /**
+　　　OVSERVER登録
+    **/
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "ApplicationDidEnterBackground:", name: UIApplicationDidEnterBackgroundNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "ApplicationDidBecomeActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
+    }
+
+    /**
+    　OVSERVER解除
+    **/
+    override func viewDidDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+    }
+    
+    func ApplicationDidEnterBackground(notification: NSNotification) {
+        print("Go TO Background")
+    }
+
+    func ApplicationDidBecomeActive(notification: NSNotification) {
+        print("Go TO Foreground")
+    }
+    
     /**
      アプリがメモリ警告を受け取った時に呼ばれる
      **/
@@ -156,13 +183,13 @@ class ViewController: UIViewController {
      TOUCH DOWN イベントアクション
      **/
     @IBAction func kvEvent(sender: CustomButton) {
-        /*
+        
         let data1:NSData! = ("ST R\(sender.tag)\u{0D}" as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         self.asyncSocket.writeData(data1, withTimeout:-1, tag: 0)
         
         let data2:NSData! = ("ST R1900\u{0D}" as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         self.asyncSocket.writeData(data2, withTimeout:-1, tag: 0)
-        */
+        
     }
     
 
