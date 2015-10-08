@@ -673,12 +673,16 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="_DVD_PAUSE" destination="dnW-Hh-3Lh" id="208-YI-dGm"/>
+                        <outlet property="_DVD_PLAY" destination="dSQ-aN-Mg1" id="T4Q-h8-kCd"/>
+                        <outlet property="_DVD_STOP" destination="Vea-hJ-KXT" id="2w7-nH-CTU"/>
                         <outlet property="_OUT1_INPUT1" destination="au3-jP-vQu" id="n9Y-I3-6Zj"/>
                         <outlet property="_OUT1_INPUT2" destination="jdn-d9-KFX" id="nIQ-Cz-yUb"/>
                         <outlet property="_OUT1_INPUT3" destination="IKf-8l-F3Z" id="EGd-ht-Tg5"/>
                         <outlet property="_OUT1_INPUT4" destination="Cul-c7-hcb" id="GyS-LJ-o1E"/>
                         <outlet property="_OUT1_POWERON" destination="Bxj-ro-zs4" id="Pmh-6e-lKx"/>
                         <outlet property="_OUT1_STANDBY" destination="mfq-wa-oYv" id="woX-tI-QeF"/>
+                        <outlet property="_VOL_MUTE" destination="cOh-4t-we6" id="875-rT-Weq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

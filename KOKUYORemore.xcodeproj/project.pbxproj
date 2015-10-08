@@ -537,6 +537,7 @@
 				3F3E4F0A1BAF7BCB0045137F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F3E4F0B1BAF7BCB0045137F /* Build configuration list for PBXNativeTarget "KOKUYORemoreTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +546,7 @@
 				3F3E4F0D1BAF7BCB0045137F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F3E4F0E1BAF7BCB0045137F /* Build configuration list for PBXNativeTarget "KOKUYORemoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +555,7 @@
 				3F3E4F101BAF7BCB0045137F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

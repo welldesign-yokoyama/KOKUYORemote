@@ -19,21 +19,75 @@ class ViewController: UIViewController {
     @IBOutlet weak var _OUT1_INPUT4: CustomButton!
     @IBOutlet weak var _OUT1_POWERON: CustomButton!
     @IBOutlet weak var _OUT1_STANDBY: CustomButton!
+    @IBOutlet weak var _VOL_MUTE: CustomButton!
+    @IBOutlet weak var _DVD_PLAY: CustomButton!
+    @IBOutlet weak var _DVD_STOP: CustomButton!
+    @IBOutlet weak var _DVD_PAUSE: CustomButton!
+  //@IBOutlet weak var _OUT1_DISPLAY: CustomButton!
+    
+    
+    var timer = NSTimer()
+    var timerRunning = false
     var asyncSocket = AsyncSocket()
 
     /**
-     ルートViewがメモリにロードされた直後の呼ばれる
+    ルートViewがメモリにロードされた直後の呼ばれる
      **/
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        /**
-         ASyncSocket インスタンス生成
-         **/
-
-        var error:NSError?
+        // ASyncSocket インスタンス生成
         self.asyncSocket = AsyncSocket(delegate: self)
+    }
+
+    /**
+　　　 OVSERVER登録
+    UIApplicationDidEnterBackgroundNotification
+    UIApplicationDidBecomeActiveNotification
+    **/
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "ApplicationDidEnterBackground:",
+            name: UIApplicationDidEnterBackgroundNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "ApplicationDidBecomeActive:",
+            name: UIApplicationDidBecomeActiveNotification, object: nil)
+    }
+
+    /**
+    OVSERVER解除
+    **/
+    override func viewDidDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+    }
+    
+    /**
+    EnterBackground
+    Home Button Taped
+    **/
+    func ApplicationDidEnterBackground(notification: NSNotification) {
+        print("Application Did Enter Background")
+        
+        self.asyncSocket.disconnect()
+        print("TCP Socket is DISCONNECTED")
+        
+        if timerRunning {
+            timer.invalidate()
+            timerRunning = false
+            print("Timer is now STOOPING")
+        }
+    }
+
+    /**
+    　EnterForeground
+    **/
+    func ApplicationDidBecomeActive(notification: NSNotification) {
+        var error: NSError?
+
+        print("Application Did Enter Foreground")
         do {
             try self.asyncSocket.connectToHost("192.168.11.77", onPort:8501, withTimeout:2)
         } catch let error1 as NSError {
@@ -42,43 +96,24 @@ class ViewController: UIViewController {
         
         if error != nil {
             print(error)
+            print("CONNECTION ERROR!")
+            if timerRunning {
+                timer.invalidate()
+                timerRunning = false
+                print("Timer is STOPPING")
+            }
+        } else {
+            print("TCP Socket Will CONNECT")
+            if !timerRunning {
+                timer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "onUpdate", userInfo: nil, repeats: true)
+                timerRunning = true
+                print("Timer is now STARTING")
+            }
         }
-        else{
-            print("CONNECTION GOOD")
-            NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "onUpdate", userInfo: nil, repeats: true)
-        }
-
-    }
-
-    /**
-　　　OVSERVER登録
-    **/
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "ApplicationDidEnterBackground:", name: UIApplicationDidEnterBackgroundNotification, object: nil)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "ApplicationDidBecomeActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
-    }
-
-    /**
-    　OVSERVER解除
-    **/
-    override func viewDidDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
-    }
-    
-    func ApplicationDidEnterBackground(notification: NSNotification) {
-        print("Go TO Background")
-    }
-
-    func ApplicationDidBecomeActive(notification: NSNotification) {
-        print("Go TO Foreground")
     }
     
     /**
-     アプリがメモリ警告を受け取った時に呼ばれる
+    アプリがメモリ警告を受け取った時に呼ばれる
      **/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -86,35 +121,36 @@ class ViewController: UIViewController {
     }
 
     /**
-     NSTimer イベント
+    NSTimer イベント
      **/
     func onUpdate() {
+        print("Event TIMEUP")
         let data1:NSData! = ("RDS DM00100.H 2\u{0D}" as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         self.asyncSocket.writeData(data1, withTimeout:-1, tag: 0)
-        print("TimeUP")
         
-    }
-    /**
-     HOSTに接続完了
-     **/
-    func onSocket(sock: AsyncSocket!, didConnectToHost host: String!, port: UInt16) {
-        print("Info___didConnectToHost")
-        self.asyncSocket.readDataWithTimeout(-1, tag: 0)
-        print(host)
-    }
-    
-    /**
-     データ送信
-     **/
-    func onSocket(sock: AsyncSocket!, didWriteDataWithTag tag: Int) {
-        print("WriteData")
     }
 
     /**
-     データ受信
+    HOSTに接続完了
+     **/
+    func onSocket(sock: AsyncSocket!, didConnectToHost host: String!, port: UInt16) {
+        print("TCP Socket Did CONNECT TO \(host)")
+        self.asyncSocket.readDataWithTimeout(-1, tag: 0)
+    }
+    
+    /**
+    データ送信
+     **/
+    func onSocket(sock: AsyncSocket!, didWriteDataWithTag tag: Int) {
+        print("Info___didWriteData")
+    }
+
+    /**
+    データ受信
      **/
     func onSocket(sock: AsyncSocket!, didReadData data: NSData!, withTag tag: Int) {
         print("Info___didReadData")
+
         self.asyncSocket.readDataWithTimeout(-1, tag: 0)
         if let out: NSString = NSString(data: data, encoding: NSUTF8StringEncoding) {
             if (out.length == 11) {
@@ -149,7 +185,7 @@ class ViewController: UIViewController {
                 _OUT1_INPUT1.selected = out1_input == 1
                 _OUT1_INPUT2.selected = out1_input == 2
                 _OUT1_INPUT3.selected = out1_input == 3
-                _OUT1_INPUT4.selected = out1_input == 4
+                _OUT1_INPUT4.selected = out1_input == 6
                 _OUT1_POWERON.selected = out1_power == 1
                 _OUT1_STANDBY.selected = out1_power == 0
                 
@@ -166,6 +202,11 @@ class ViewController: UIViewController {
                 print("DVD_PAUSE = \(dvd_pause)")
                 print("DVD_STANDBY = \(dvd_standby)")
                 print("VOL_MUTE = \(vol_mute)")
+
+                _VOL_MUTE.selected = vol_mute == 1
+                _DVD_STOP.selected = dvd_stop == 1
+                _DVD_PAUSE.selected = dvd_pause == 1
+                _DVD_PAUSE.selected = dvd_pause == 1
                 
                 
             }
@@ -176,7 +217,7 @@ class ViewController: UIViewController {
      HOST切断
      **/
     func onSocket(sock: AsyncSocket!, willDisconnectWithError err: NSError!) {
-        print("Info___willDisconnectWithError")
+        print("TCP Socket Did DISCONNECT")
     }
 
     /**
