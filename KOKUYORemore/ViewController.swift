@@ -11,7 +11,7 @@ import UIKit
 /**
  ViewController Class
  **/
-class ViewController: UIViewController {
+class ViewController: UIViewController, AsyncSocketDelegate {
 
     @IBOutlet weak var _OUT1_INPUT1: CustomButton!
     @IBOutlet weak var _OUT1_INPUT2: CustomButton!
@@ -54,6 +54,9 @@ class ViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "ApplicationDidBecomeActive:",
             name: UIApplicationDidBecomeActiveNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "OrientationChange:",
+            name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
 
     /**
@@ -62,6 +65,19 @@ class ViewController: UIViewController {
     override func viewDidDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
+    }
+    
+    /**
+    Orientation Change
+    **/
+    func OrientationChange(notification: NSNotification) {
+        print("Orientation Change")
+        if (UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation)) {
+            print("Landscape")
+        }
+        if (UIDeviceOrientationIsPortrait(UIDevice.currentDevice().orientation)) {
+            print("Portrate")
+        }
     }
     
     /**
@@ -124,7 +140,7 @@ class ViewController: UIViewController {
     NSTimer イベント
      **/
     func onUpdate() {
-        print("Event TIMEUP")
+        //print("Event TIMEUP")
         let data1:NSData! = ("RDS DM00100.H 2\u{0D}" as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         self.asyncSocket.writeData(data1, withTimeout:-1, tag: 0)
         
@@ -142,19 +158,19 @@ class ViewController: UIViewController {
     データ送信
      **/
     func onSocket(sock: AsyncSocket!, didWriteDataWithTag tag: Int) {
-        print("Info___didWriteData")
+        //print("Info___didWriteData")
     }
 
     /**
     データ受信
      **/
     func onSocket(sock: AsyncSocket!, didReadData data: NSData!, withTag tag: Int) {
-        print("Info___didReadData")
+        //print("Info___didReadData")
 
         self.asyncSocket.readDataWithTimeout(-1, tag: 0)
         if let out: NSString = NSString(data: data, encoding: NSUTF8StringEncoding) {
             if (out.length == 11) {
-                print(out)
+                //print(out)
                 let hex1: String = (out.substringWithRange(NSRange(location: 0, length: 4)))
                 let hex2: String = (out.substringWithRange(NSRange(location: 5, length: 4)))
                 
@@ -172,7 +188,7 @@ class ViewController: UIViewController {
                 let out2_power: UInt32 = (data1 & 0x0200) >> 9   // OUT2_POWER
                 let out1_display: UInt32 = (data1 & 0x1000) >> 12  // OUT1_DISPLAY
                 let out2_display: UInt32 = (data1 & 0x0100) >> 8   // OUT1_DISPLAY
-                
+                /*
                 print(hex1)
                 print(data1)
                 print("OUT1_INPUT = \(out1_input)")
@@ -181,7 +197,7 @@ class ViewController: UIViewController {
                 print("OUT2_POWER = \(out2_power)")
                 print("OUT1_DISPLAY = \(out1_display)")
                 print("OUT2_DISPLAY = \(out2_display)")
-                
+                */
                 _OUT1_INPUT1.selected = out1_input == 1
                 _OUT1_INPUT2.selected = out1_input == 2
                 _OUT1_INPUT3.selected = out1_input == 3
@@ -194,7 +210,7 @@ class ViewController: UIViewController {
                 let dvd_pause: UInt32 = (data2 & 0x2000) >> 13   // DVD_PAUSE
                 let dvd_standby: UInt32 = (data2 & 0x1000) >> 12   // DVD_STANDBY
                 let vol_mute: UInt32 = (data2 & 0x0001)  // VOL_MUTE
-                
+                /*
                 print(hex2)
                 print(data2)
                 print("DVD_PLAY = \(dvd_play)")
@@ -202,7 +218,7 @@ class ViewController: UIViewController {
                 print("DVD_PAUSE = \(dvd_pause)")
                 print("DVD_STANDBY = \(dvd_standby)")
                 print("VOL_MUTE = \(vol_mute)")
-
+                */
                 _VOL_MUTE.selected = vol_mute == 1
                 _DVD_STOP.selected = dvd_stop == 1
                 _DVD_PAUSE.selected = dvd_pause == 1
